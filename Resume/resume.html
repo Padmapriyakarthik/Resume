@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Bodoni+Moda:ital,wght@0,800;1,400&display=swap" rel="stylesheet">
+<script src="https://use.fontawesome.com/990301c4ba.js"></script>
+<style>
+* {
+  box-sizing:border-box;
+}
+
+body {
+  margin-left:100px;
+  margin-right:100px;
+  font-family: 'Alegreya Sans', sans-serif;
+  text-align: justify;
+  font-size: 20px;
+ 
+}
+
+header {
+  
+  padding: 1px;
+  text-align: center;
+  font-size: 35px;
+  background-color: gray;
+}
+#left-section{
+  float: left;
+  width: 50%;
+  height: 600px;
+  padding: 20px;
+  overflow:auto;
+  background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 0%);
+
+}
+
+#right-section {
+  float: left;
+  overflow:auto;
+  padding: 20px;
+  width: 50%;
+  height: 600px;
+  background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 0%);
+}
+
+.skills{
+  border-radius: 25px;
+    width:50%;
+    margin-left:150px;
+    display:inline-block;
+    height: 12px;
+    background-color: blueviolet;
+}
+#python
+{  
+    width:80%;
+    text-align: right;
+    display:inline-block;
+}
+#java
+{  
+    width:70%;
+    text-align: right;
+    display:inline-block;
+}
+.subheading{
+  text-align: center;
+  font-weight: bold;
+  color:gray;
+}
+.heading{
+  font-style:bold;
+  font-size: 23px;
+  font-family: 'Bodoni Moda', serif;
+}
+  .address{
+    font-size: 20px;
+    padding:10px;
+    color:black;
+    font-style: italic ;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    text-align: center;
+  }
+  #address{
+    font-size: 20px;
+    color:black;
+    font-style: italic ;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    text-align: center;
+  }
+  #name{
+    text-align: center;
+    background-color: blueviolet;
+    padding:15px;
+    position:relative;
+    bottom:50px;
+  }
+  img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+@media (max-width: 600px) {
+    #left-section,#right-section {
+    width: 100%;
+    height: auto;
+    
+  }
+  
+}
+</style>
+</head>
+<body>
+
+<header>
+  <img src="padma.jpeg" alt="Avatar" style="width:200px">
+  <p class="address"></p>
+  <span id="name">Padmapriya</span>
+</header>
+
+<p id="address">4/199,5thstreet,TM Nagar,Uthangudi,Madurai.625107. padmapriyakarthik97@gmail.com-6383893518.</p>
+<section>
+  <section id="left-section">
+
+    <div id="career-objective">
+      <i class="fa fa-user-circle" style="font-size:30px;"></i><span class="heading">Career Objective</span>
+        <p>Seeking a role to capitalize on the tremondous knowledge on 
+          product flourishment and enlargement, promoting new perfect end to end products</p>
+    </div>
+
+    <div id="qualification">
+      <i class="fa fa-graduation-cap" style="font-size:30px;"></i>
+      <span class="heading">Qualification</span>
+        <ul>
+        <li>Completed Bachelor of Technology in Information Technology 
+            at Mepco Schlenk Engineering College(autonomous), Sivakasi with 87.6% in 2018.</li>
+        <li>Accomplished Higher Secondary in Velammal Matric Higher Secondary School Madurai
+            with a Percentage of 91.42% in the year 2014.</li>
+        <li>Completed SSLC in Velammal Matric Higher Secondary School Madurai with a score of 95.4%.
+            in the year 2012.</li>
+        </ul>
+    </div>
+    
+    <div id="skills">
+      <i class="fa fa-certificate" style="font-size:30px;"></ ></i><span class="heading">Skills</span><br>
+        <label>Python</label>
+        <div class="skills">
+        <div id="python"><i class="fa fa-circle" aria-hidden="true"></i></div>
+      </div><br>
+      <label>Java&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <div class="skills">
+        <div id="java"><i class="fa fa-circle" aria-hidden="true"></i></div>
+      </div>
+    </div>  
+</section>
+  
+  <section id="right-section">
+    <div id="Achievements">
+      <i class="fa fa-trophy" style="font-size:30px;" ></i><span class="heading">Awards and Achievements</span>
+        <p class="subheading">Academics</p>
+          <ul>
+              <li>Awarded for the final year project done on Deep Learning.</li>
+              <li>Completed NPTEL online certification course on “Programming, 
+                  Data Structures and Algorithms using Python” by IIT Madras and scored 80%.</li>
+              <li>Done and Dusted GETS Certification Vantage level with a GRADE B1.</li>
+          </ul>
+        <p class="subheading">Extra-Curricular</p>
+          <ul>
+            <li>Active participant and prize winner in various association and club events</li>
+          </ul>
+    </div>
+    <div id="projects">
+      <i class="fa fa-folder-open" style="font-size:30px;"></i><span class="heading">Projects</span>
+      <p>A Deep Learning Based Approach For Face Image Retrival using Deep Learning-Python</p>
+
+    </div>
+  </section>
+
+
+</section>
+</body>
+</html>
